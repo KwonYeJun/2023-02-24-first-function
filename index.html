@@ -17,25 +17,34 @@
   <script>
 
 
-    let h1 = document.getElementById("h1");
-    let h2 = document.getElementById("h2");
+    let rubin = 1; //메모리 만들어 주기 변수 선언
+    console.log(rubin);
+    rubin = "바보"; 
+    console.log(rubin);
 
-    let h3 = document.getElementById("h3");
+    //()안에 있는 것 들이 변수였네..?
+    //객체에서 말하는 변수 = key 키
+    //매개변수
+    function valueChange(firs, two , three) { //만들어 두긴 하는데 부르기 전 까지는 사용 하지 않는다. 함수 선언이다. 함수는 항상 소괄호 중괄호를 쓴다.
 
-    for (let i = 0; i < 3; i++) {
+      console.log(rubin);
 
-
-
-
+      // if(typeof(firs) === "string" && typeof(two) === "string"&& typeof(three) === "string"){
+      //   return firs + two + three ;
+      // }
+    if(typeof(firs) === "string"){
+      if(typeof(two) === "string"){
+        if(typeof(two) === "string"){
+          return firs + two + three ;
+        }
+      }
     }
 
-    function color(one, two, tree) {
 
-      one.style.color = "blue";
-      two.style.color = "red";
-      tree.style.color = "green";
-
+      //리턴에 직관적으로 "안녕하세요를" 쓰면 리터널이다 돌려준다 불렀을 때 리턴 한다. 
     }
+    rubin = valueChange(1, 2,3); //호출 ()는 호출이였다라고 생각든다 
+    console.log(rubin);
 
 
   </script>
