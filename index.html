@@ -10,41 +10,131 @@
 
 <body>
 
-  <h1>function</h1>
+  <h4></h4>
+  <h4></h4>
+  <h4></h4>
+  <h4></h4>
+
+  <h1>function6</h1>
+
   <h2>function</h2>
   <h3>function</h3>
+  <input type="number" id="in">
+  
+</input>
+<input type="number" id="inn">
+<button id="output">클릭</button>
+</input>
+
+
 
   <script>
 
 
     let rubin = 1; //메모리 만들어 주기 변수 선언
     console.log(rubin);
-    rubin = "바보"; 
+    rubin = "바보";
     console.log(rubin);
+    let a = 0, b =0;
+    let btn = document.getElementById("output");
+    let input = document.getElementById("in");
+    let inputt = document.getElementById("inn");
+    let h1 = document.getElementsByTagName("h4");
 
     //()안에 있는 것 들이 변수였네..?
     //객체에서 말하는 변수 = key 키
     //매개변수
-    function valueChange(firs, two , three) { //만들어 두긴 하는데 부르기 전 까지는 사용 하지 않는다. 함수 선언이다. 함수는 항상 소괄호 중괄호를 쓴다.
+    function s(firs, two) { //만들어 두긴 하는데 부르기 전 까지는 사용 하지 않는다. 함수 선언이다. 함수는 항상 소괄호 중괄호를 쓴다.
 
-      console.log(rubin);
-
+      
       // if(typeof(firs) === "string" && typeof(two) === "string"&& typeof(three) === "string"){
       //   return firs + two + three ;
       // }
-    if(typeof(firs) === "string"){
-      if(typeof(two) === "string"){
-        if(typeof(two) === "string"){
-          return firs + two + three ;
-        }
-      }
-    }
+      let subtraction = (firs - two);
+      document.getElementById("output").innerHTML = subtraction;
+      return firs + " - " + two + "  =  " + Math.abs(subtraction);
 
 
       //리턴에 직관적으로 "안녕하세요를" 쓰면 리터널이다 돌려준다 불렀을 때 리턴 한다. 
     }
-    rubin = valueChange(1, 2,3); //호출 ()는 호출이였다라고 생각든다 
-    console.log(rubin);
+
+
+s(input , inputt);
+console.log(input);
+
+
+
+
+
+
+
+
+
+
+
+//     // <!-- ? 
+// function sum(firs, two) {
+
+// let sum = (firs + two);
+
+// return firs + " + " + two + "  =  " + Math.abs(sum);
+
+
+// }
+
+// function  d(firs, two) {
+
+// let division = (firs + two);
+
+// return firs + " + " + two + "  =  " + Math.abs(sum);
+
+
+// }
+
+// function m(firs, two) {
+
+// let multiplication = (firs + two);
+
+// return firs + " + " + two + "  =  " + Math.abs(sum);
+
+
+// }
+// -->
+// // 
+
+
+
+
+
+
+
+
+
+//     let h1 = document.getElementsByTagName("h1");
+//     let h2 = document.getElementsByTagName("h2");
+
+//     let listColor = ["red", "blue", "green", "yellow"];
+
+//     for (let i = 0; i < listColor.length; i++) {
+
+//       h1[i].style.color = listColor[i];
+      
+//       if( i > 2){
+//         h1[i].style.backgroundColor = "black";
+//       }
+
+//     }
+//     function cc(){
+      
+
+//     }
+
+// cc(h1 , h2);
+
+
+
+
+
 
 
   </script>

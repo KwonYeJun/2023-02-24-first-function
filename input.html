@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="text" id="int"  onchange="one()">
+  
+   
+  </input>
+  <input type="number" id="int2"onchange="two()">
+   
+  </input>
+  <div id="out"></div>
+
+
+</body>
+
+<script>
+
+let input = document.getElementById("int").value;
+let input2 = document.getElementById("int2").value;
+
+let out = document.getElementById("out");
+
+out.style.height = "400px";
+// out.style.border = "1px" +"black" + "soulid";
+out.style.backgroundColor = "yellow";
+
+let a = 0; b = 0;
+function one(){
+  let result = input.value;
+  console.dir(input.value);
+  return  result;
+}
+
+function two(){
+  let result = input2.value;
+  return  result;
+}
+a = one();
+b = two();
+
+function sum(a , b){
+
+let result = 0;
+
+result = a + b;
+
+return result;
+
+}
+sum(a , b);
+
+
+
+
+</script>
+
+
+</html>
